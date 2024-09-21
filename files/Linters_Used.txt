@@ -1,0 +1,16 @@
+Linters Used
+
+stylelint.config.js
+
+HTMLhint
+stylelint
+ValidatorW3
+
+
+Cross-browser testing 
+ 
+- IE Edge, Safari, Firefox, and Chrome
+
+- No issues found
+
+
