@@ -6,11 +6,12 @@
 */
 
 body {
-    font-family: "Playwrite ES Deco", cursive;
+    font-family: Calibri;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     line-height: 1.6;
+    margin: 0px;
 }
 
 h1 {
@@ -23,6 +24,7 @@ h1 {
 h2 {
     font-size: 20px;
     font-weight: 700;
+    color: #666;
 }
 
 h3 {
@@ -30,9 +32,13 @@ h3 {
     font-weight: 700;
 }
 
-;
+main {
+    padding: 15px;
+}
 
-
+p {
+    text-align: justify;
+}
 
 /* Box-Sizing */
 * {
@@ -42,22 +48,17 @@ h3 {
 
 a {
     color: #130121;
+    text-decoration: none;
 }
 
 a:hover,
 a:focus {
-    text-decoration: none;
+    text-decoration: underline;
+    color: #7B1FA2;
 }
 
-a:visited {
-    /* visited link */
-    color: #222223;
-}
-
-a:active {
-    /* selected link color: #454446;
-   */
-    color: #84ef56;
+.link {
+    color: #7B1FA2;
 }
 
 input,
@@ -68,8 +69,8 @@ button {
 }
 
 .my_logo {
-    width: 200px;
-    height: 100px;
+    /* width: 200px; */
+    /* height: 100px; */
     /* border: 2px solid rgba(179, 25, 25, 0.3);
     */
     padding: 2px;
@@ -99,21 +100,42 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
-    padding: 20px;
+    /* width: 100%; */
+    padding: 5px 20px;
+    border-bottom: solid 1px #ccc;
+    box-shadow: 0px 2px 15px #ccc;
+    background-color: #e9e9e9;
 }
 
 .page-header__item {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 200px;
     flex: 0 1 200px;
+
+}
+
+.page-header_Title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    text-shadow: 0px 4px 5px #aaa;
+    margin: auto;
+}
+
+.page-header_page {
+    font-size: 15px;
+    color: #7B1FA2;
+    margin: auto;
+    border-left: solid 1px #aaa;
+    padding-left: 5px;
+    margin-left: 5px;
 }
 
 .page-header__item:last-child {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    text-align: center;
+    text-align: right;
 }
 
 .navigation-list {
@@ -131,9 +153,8 @@ button {
     width: 200px;
     margin-right: 40px;
     border-radius: 50%;
-    /* */
-    /* border: 20px solid rgba(79, 25, 179, 0.3);
-    */
+    border-width: 0px;
+    box-shadow: 0px 0px 50px #7B1E5D;
 }
 
 .profile__portrait {
@@ -145,13 +166,17 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    max-width: 800px;
     padding: 20px;
+    margin: auto;
+    height: 400px;
     /* border: 2px solid rgba(79, 25, 179, 0.3);
+
     */
 }
 
 .page-main-portrait-item {
+    margin: auto;
     text-align: right;
     /* border: 2px solid rgba(250, 31, 173, 0.3);
     */
@@ -174,6 +199,13 @@ button {
     */
 }
 
+.project-img {
+    width: 95%;
+    max-height: 95vh;
+    border: solid 1px #999;
+    box-shadow: 0px 0px 5px;
+}
+
 .page-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -188,7 +220,7 @@ button {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
     padding: 20px;
     /* border: 2px solid rgba(79, 25, 179, 0.3);
     */
@@ -210,12 +242,14 @@ button {
 .grid {
     display: -ms-grid;
     display: grid;
-    /* border: 2px solid rgba(21, 232, 123, 0.3);
-    */
+    /* border: 2px solid rgba(21, 232, 123, 0.3); */
     -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 10px;
     margin: 0;
+    background-color: #ddd;
+    border-radius: 7px;
+    padding: 10px;
 }
 
 .grid__item {
@@ -225,6 +259,8 @@ button {
     min-height: auto;
     padding: 10px;
     margin: 0;
+    border-radius: 7px;
+    background-color: #fff;
 }
 
 @media all and (max-width: 500px) {
@@ -264,7 +300,7 @@ button {
     /* takes the font from the outer container */
     font-family: inherit;
     /* styles the button */
-    background-color: #3a49ec;
+    /* background-color: #3a49ec; */
     color: undefined;
     text-decoration: none;
     padding: 10px;
